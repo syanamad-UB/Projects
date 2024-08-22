@@ -1,21 +1,19 @@
 # Projects
-This is **Susmitha Yanamadala**. I am currently pursuing **Masters in Data Science**. This repository consists of projects implemented as part of the course work and self-study.
+This is **Susmitha Yanamadala**, **Data Science Masters Grad with 4+ years of experience**. This repository consists of projects implemented as part of the course work and self-study.
 
 **Project List and Details:**
 
 **SQL:**
 
 1. **IMDB Data Management and Analysis**:
-   * Established a SQLite database, ensuring adherence to the third normal form for optimal table structuring.
-   * Leveraged the "sqlite3" Python library for seamless table creation and data ingestion.
-   * Conducted exploratory data analysis using SQL queries within Python, extracting key insights from the IMDB dataset.
+   * Created a SQLite database and applied third normal form to the tables. Using the sqlite3 library in Python, the tables were successfully created and 10000000 records of data is loaded into the database.
+   * Subsequently, SQL queries were employed in Python to retrieve the data from the database for exploratory data analysis, allowing for the discovery of valuable insights.
 
 2. **Bank Marketing Campaign Data Management and Web Integration**:
-   * Initiated a PostgreSQL database, achieving table decomposition to BCNF for streamlined data handling.
-   * Utilized the "psycopg2" Python library for robust table generation and effective data population.
-   * Engaged in rigorous database testing and data analysis, harnessing commands like insert, update, delete, and SQL constructs such as joins, subqueries, CTEs, and triggers.
-   * Executed in-depth query performance analysis; enhanced query speeds by optimizing via index creation.
-   * Spearheaded the development of a real-time website interface, allowing direct data extraction from the database.
+   * Created a PostgreSQL database and decomposed tables to BCNF. The tables were created and data is loaded into the database using the psycopg2 library in Python.
+   * Extensive testing of the database and data analysis was conducted, involving various commands such as insert, update, delete, select, group by, order by, having and where, as well as advanced concepts like joins, subqueries, recursive queries, common table expressions (CTEs)/temporary tables, and triggers.
+   * Query execution analysis was carried out, and the cost of query execution was reduced by optimizing them through index creation.
+   * A real-time website was developed to enable data retrieval directly from the database.
 
 **Supervised & Unsupervised Machine Learning:**
 
@@ -31,9 +29,12 @@ This is **Susmitha Yanamadala**. I am currently pursuing **Masters in Data Scien
    * Leveraged the Flight Price Prediction dataset with Linear Regression, Ridge Regression, and Ridge Regression using Gradient Descent, delving into ticket price predictions while addressing model sensitivities and harnessing L2 regularization for enhanced generalization and robustness.
      
 3. **Movie Clustering for Recommender Systems** (R):
-   * Undertook data cleaning and pre-processing with a focus on features like popularity, vote metrics, and release timelines.
-   * Deployed clustering algorithms, specifically K-means and hierarchical clustering, to group movies.
-   * Envisioned application: Enhancing the precision and relevance of Movie Recommendation Systems through derived clusters.
+   * Data cleaning/pre-processing and analysis were conducted, focusing on features such as popularity, vote average, vote count, and release year and month for clustering purposes.
+   * Both K-means and hierarchical clustering algorithms were implemented. The outcomes of the clustering process can be leveraged to enhance Movie Recommendation Systems.
+
+4. **Credit Card Default Prediction**:
+   * Constructed a predictive model employing machine learning techniques to forecast credit card defaults, attaining an F1 score of 0.92 with a Random Forest classifier.
+   * Leveraged SMOTE technique to address data imbalance. Explored a variety of classification algorithms such as Logistic Regression, Decision Trees, and Support Vector Machines (SVM) to optimize performance.
   
 **Deep Learning:**
 
@@ -59,5 +60,56 @@ This is **Susmitha Yanamadala**. I am currently pursuing **Masters in Data Scien
 
 **Reinforcement Learning:**
 
-1. **Multi Agent Reinforcement Learning** - Implemented a decentralized Multi-Agent Environment where agents work to rescue a person from fire. Employed tabular methods (Q-learning, SARSA) and deep RL methods (DQN, DDQN) in a custom grid world environment, analyzing and comparing their performance. Extended the evaluation to an existing collaborative MARL -  OpenAI particle environment (Simple Reference from Petting Zoo MPE) using DQN and DDQN,to assess their effectiveness in the context of the established environment.
+1. **Multi Agent Reinforcement Learning For Fire Rescue** (Pytorch and Gymnasium):
+   * Implemented a decentralized Multi-Agent Environment where agents work to rescue a person from fire. Employed tabular methods (Q-learning, SARSA) and deep RL methods (DQN, DDQN) in a custom grid world environment, analyzing and comparing their performance.
+   * Extended the evaluation to an existing collaborative MARL -  OpenAI particle environment (Simple Reference from Petting Zoo MPE) using DQN and DDQN,to assess their effectiveness in the context of the established environment.
+   
+2. **Stock Trading Environment with Q-learning Implementation** (Pytorch):
+   * Developed a Q-learning-based reinforcement learning model, harnessing GPU computational power to optimize trading strategies in a simulated stock trading environment. Achieved a cumulative profit increase of 20% over baseline strategies.
+   * Evaluated and fine-tuned various parameter settings and learning rates to enhance the agent's decision-making capabilities and trading performance.
+
+**NLP & Generative AI:**
+
+1. **Mapping Clinical Trials with ICD-11 Using BERT**:
+   *  Developed a multi-label classification model leveraging BERT to automatically tag over 50,000 clinical trial descriptions with WHO disease codes.
+   * Implemented advanced text preprocessing, tokenization, and fine-tuned the model using PyTorch and Hugging Face Transformers, achieving 92% accuracy.
+
+2. **Online Patient Conversation Classifier**:
+   * Developed an NLP and ML-based system to classify online patient conversations, utilizing methods like Bag of Words, TF-IDF vectorization, and logistic regression for classification. The process included preprocessing text data, feature extraction, model training, and evaluation.
+   * Achieved a precision and F1 score of 0.932, indicating the model's accuracy in distinguishing patient conversations. Enhanced classification accuracy through the application of feature engineering techniques.
+
+**Computer Vision:**
+
+1. **Car Damage Detection System** (OpenCV and Pytorch):
+   * Engineered and processed a dataset of 4000 images with 9000 annotations for a car damage detection system leveraging advanced computer vision techniques including Cascade R-CNN, SSD, and YOLOv4, attaining a mean average precision of 85%.
+
+**Time-Series:**
+
+1. **Demand Forecasting For Optimizing Inventory Planning**:
+   * Designed demand forecasting models for unique combinations of customers and items in Azure ML Studio, ensuring pre-processing of sales data.
+   *Applied a range of time series forecasting methods such as ARIMA, SARIMA, Exponential Smoothing, Seasonal Decomposition (STL), and SARIMAX, validating each model's accuracy via MAPE.
+
+**Recommender Systems:**
+
+1. **Travel Destination Recommendation System**:
+   * Developed a real-time travel suggestion platform with Python, harnessing the User-Based Collaborative Filtering algorithm for personalized destination suggestions.
+   * Refined the system through comprehensive A/B testing, ensuring users received precise and relevant travel recommendations.
+
+**Data Mining:**
+
+1. **Market Basket Analysis** (Databricks and Pyspark):
+   * Consolidated, refined, and integrated 40 CSV datasets—ranging from transactional to inventory data—for a hardware retail store.
+   * Extracted actionable insights on customer behaviors and purchasing trends using Python. Executed the FP-Growth algorithm on Azure DataBricks with PySpark, segmenting both products and customers.
+   * Achieved swift implementation, wrapping up the project in a 2-week timeframe. Assessed solution efficacy via A/B testing to ensure actionable and accurate results.
+
+**Azure:**
+
+1. **Azure Data Platform Implementations for B2B**:
+   * Engineered end-to-end Azure-based solutions for integrating data from various ERP systems into Azure improving data accessibility.
+   * Configured BYOD export jobs and integrated CDM exports into Azure SQL and Synapse’s serverless databases respectively.
+   * Automated data transformation using Azure Synapse and Data Factory, enhancing efficiency and streamlining data workflows.
+   * Spearheaded Master Data Management demo, focusing on Product, Customer and Supplier data, refining data governance & quality. 
+   
+
+
 
