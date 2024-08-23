@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Details</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+		tr:hover {background-color: #f5f5f5;}
+	</style>
+</head>
+<body>
+	<h1>Table Details</h1>
+	<form>
+		<label for="table">Select a table:</label>
+		<select id="table">
+			<option value="">--Select--</option>
+			<option value="client_campaign_details">Client Campaign Details</option>
+			<option value="client_lastcontact_details">Client Last Contact Details</option>
+			<option value="client_job_details">Client Job Details</option>
+			<option value="client_details">Client Details</option>
+			<option value="client_loan_details">Client Loan Details</option>
+			<option value="client_socioeconomic_details">Client Socioeconomic Details</option>
+		</select>
+		<button type="button" onclick="showTableDetails()">Show Details</button>
+	</form>
+
+	<div id="table-details"></div>
+
+	<script>
+		function showTableDetails() {
+			var selectedTable = document.getElementById("table").value;
+			if (selectedTable == "") {
+				document.getElementById("table-details").innerHTML = "";
+				return;
+			}
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("table-details").innerHTML = this.responseText;
+				}
+			};
+			xhr.open("GET", "get-table-details.php?table=" + selectedTable, true);
+			xhr.send();
+		}
+	</script>
+</body>
+</html>

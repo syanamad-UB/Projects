@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bank Marketing App</title>
+</head>
+<body>
+	<h1>Welcome to the Bank Marketing App!</h1>
+	<p>Please select a table to view:</p>
+	<ul>
+		<li><a href="{{ url_for('client_campaign_details') }}">Client Campaign Details</a></li>
+		<li><a href="{{ url_for('client_lastcontact_details') }}">Client Last Contact Details</a></li>
+		<li><a href="{{ url_for('client_job_details') }}">Client Job Details</a></li>
+		<li><a href="{{ url_for('client_details') }}">Client Details</a></li>
+		<li><a href="{{ url_for('client_loan_details') }}">Client Loan Details</a></li>
+		<li><a href="{{ url_for('client_socioeconomic_details') }}">Client Socioeconomic Details</a></li>
+	</ul>
+</body>
+</html>

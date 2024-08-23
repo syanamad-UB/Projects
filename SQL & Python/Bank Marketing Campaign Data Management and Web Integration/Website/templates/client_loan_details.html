@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client Loan Details</title>
+</head>
+<body>
+	<h1>Client Loan Details</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Loan ID</th>
+				<th>Client ID</th>
+				<th>Credit Default</th>
+				<th>Housing Loan</th>
+				<th>Personal Loan</th>
+				<th>Credit Score</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for row in rows %}
+			<tr>
+				<td>{{ row[0] }}</td>
+				<td>{{ row[1] }}</td>
+				<td>{{ row[2] }}</td>
+				<td>{{ row[3] }}</td>
+				<td>{{ row[4] }}</td>
+				<td>{{ row[5] }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>

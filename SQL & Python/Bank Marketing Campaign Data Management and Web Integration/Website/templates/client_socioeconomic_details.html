@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client Socioeconomic Details</title>
+</head>
+<body>
+	<h1>Client Socioeconomic Details</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Client ID</th>
+				<th>Employment Variation Rate</th>
+				<th>Consumer Price Index</th>
+				<th>Consumer Confidence Index</th>
+				<th>EURIBOR 3 Month Rate</th>
+				<th>Number of Employees</th>
+				<th>Salary</th>
+				<th>Job ID</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for row in rows %}
+			<tr>
+				<td>{{ row[0] }}</td>
+				<td>{{ row[1] }}</td>
+				<td>{{ row[2] }}</td>
+				<td>{{ row[3] }}</td>
+				<td>{{ row[4] }}</td>
+				<td>{{ row[5] }}</td>
+				<td>{{ row[6] }}</td>
+				<td>{{ row[7] }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>

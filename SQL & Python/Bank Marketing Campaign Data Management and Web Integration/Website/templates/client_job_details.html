@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Job Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Client Job Details</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Job ID</th>
+                <th>Client ID</th>
+                <th>Job</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row.job_id }}</td>
+                    <td>{{ row.client_id }}</td>
+                    <td>{{ row.job }}</td>
+                    <td>{{ row.salary }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>

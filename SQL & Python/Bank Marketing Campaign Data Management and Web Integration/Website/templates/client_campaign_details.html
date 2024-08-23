@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Campaign Details</title>
+</head>
+<body>
+	<h1>Campaign Details</h1>
+	<table>
+		<tr>
+			<th>Client ID</th>
+			<th>Campaign</th>
+			<th>Pdays</th>
+			<th>Previous</th>
+			<th>Poutcome</th>
+			<th>Outcome</th>
+		</tr>
+		{% for campaign in campaigns %}
+		<tr>
+			<td>{{ campaign[0] }}</td>
+			<td>{{ campaign[1] }}</td>
+			<td>{{ campaign[2] }}</td>
+			<td>{{ campaign[3] }}</td>
+			<td>{{ campaign[4] }}</td>
+			<td>{{ campaign[5] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
