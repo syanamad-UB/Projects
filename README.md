@@ -8,6 +8,7 @@ This is **Susmitha Yanamadala**, **Data Science Masters Grad with 4+ years of ex
 1. **IMDB Data Management and Analysis**: Project done as part of EAS 503 Python Programming course work.
    * Created a SQLite database and applied third normal form to the tables. Using the sqlite3 library in Python, the tables were successfully created and 10000000 records of data is loaded into the database.
    * Subsequently, SQL queries were employed in Python to retrieve the data from the database for exploratory data analysis, allowing for the discovery of valuable insights.
+
 **Skills Used: Python (pandas, sqlite3, matplotlib, seaborn, plotly), SQL, Database Management Concepts (Normalization), Exploratory Data Analysis.**
 
 2. **Bank Marketing Campaign Data Management and Web Integration**: Project done as part of CSE 560 Data Models Query Language course work.
@@ -15,6 +16,7 @@ This is **Susmitha Yanamadala**, **Data Science Masters Grad with 4+ years of ex
    * Extensive testing of the database and data analysis was conducted, involving various commands such as insert, update, delete, select, group by, order by, having and where, as well as advanced concepts like joins, subqueries, recursive queries, common table expressions (CTEs)/temporary tables, and triggers.
    * Query execution analysis was carried out, and the cost of query execution was reduced by optimizing them through index creation.
    * A real-time website was developed to enable data retrieval directly from the database.
+
 **Skills Used: Python (pandas, psycopg2, flask), PostgreSQL, Database Management Concepts (Normalization, CTE, Index Creation, Triggers, Query Optimization), HTML.**
 
 **Supervised & Unsupervised Machine Learning:**
@@ -22,6 +24,7 @@ This is **Susmitha Yanamadala**, **Data Science Masters Grad with 4+ years of ex
 1. **Heart Disease Prediction**: Project done as part of EAS 508 Statistical data Mining-I course work
    * Vital signs, including blood pressure, heart rate, cholesterol, and blood sugar, along with factors such as age, gender, food habits, and lifestyle, are utilized to predict the likelihood of a person being diagnosed with heart disease. Conducted exploratory data analysis to comprehend the data.
    * Implemented a spectrum of classification models: Logistic Regression, Decision Tree, Random Forest, K Nearest  Neighbor, Gaussian Naive Bayes, and Support Vector Classifier and achieved 88% accuracy using Random Forest model.
+
 **Skills Used: Python (numpy, pandas, matplotlib, seaborn, sklearn), Data Cleaning, Data pre-processing, Data Augmentation using Kmeans Clustering, Exploratory Data Analysis, Feature Engineering, Classification (Logistic Regression, Decision Tree, Random Forest, K Nearest  Neighbor, Gaussian Naive Bayes, and Support Vector Classifier)**
      
 2. **Regression Analysis on Penguin & Flight Price Datasets**: Project done as part of CSE 574 Intro to ML course work.
@@ -29,16 +32,19 @@ This is **Susmitha Yanamadala**, **Data Science Masters Grad with 4+ years of ex
    * Executed rigorous data visualization and cleaning on both datasets, unveiling pivotal insights and ensuring data integrity.
    * Deployed Logistic Regression on the Penguins dataset to forecast species, emphasizing hyperparameter tuning to refine model accuracy.
    * Leveraged the Flight Price Prediction dataset with Linear Regression, Ridge Regression, and Ridge Regression using Gradient Descent, delving into ticket price predictions while addressing model sensitivities and harnessing L2 regularization for enhanced generalization and robustness.
+
 **Skills Used: Python (numpy, pandas, matplotlib, seaborn, pickle), Data Cleaning, Data pre-processing, Exploratory Data Analysis, Feature Selection, Logistic Regression with sigmoid cost function and gradient descent from scratch, Regression Analysis (Linear Regression, Ridge Regression, Ridge Regression with Gradient Descent) from scratch.**
      
 3. **Movie Clustering for Recommender Systems**: Project done as part of EAS 509 Statistical Data Mining-II course work.
    * Data cleaning/pre-processing and analysis were conducted, focusing on features such as popularity, vote average, vote count, and release year and month for clustering purposes.
    * Both K-means and hierarchical clustering algorithms were implemented. The outcomes of the clustering process can be leveraged to enhance Movie Recommendation Systems.
+
 **Skills Used: R (lubridate, corrplot, ggplot2, ggally, factoextra, tidyverse, dplyr, tibbel, readr, cluster, plotly), R Markdown, Data Cleaning, Data pre-processing, Exploratory Data Analysis, Feature Selection, clustering (K Means, Hierarchical).**
 
 4. **Credit Card Default Prediction**: Personal project
    * Constructed a predictive model employing machine learning techniques to forecast credit card defaults, attaining an F1 score of 0.92 with a Random Forest classifier.
    * Leveraged SMOTE technique to address data imbalance. Explored a variety of classification algorithms such as Logistic Regression, Decision Trees, and Support Vector Machines (SVM) to optimize performance.
+
 **Skills Used: Python (numpy, pandas, matplotlib, seaborn, sklearn), Data Cleaning, Data pre-processing, Data Augmentation using SMOTE technique, Exploratory Data Analysis, Feature Engineering, Classification (Logistic Regression, Decision Tree, Random Forest, and Support Vector Classifier).**
   
 **Deep Learning:**
